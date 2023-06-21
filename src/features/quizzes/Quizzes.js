@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 export default function Quizzes() {
   console.log(`selectQuizzes yields ${JSON.stringify(selectQuizzes, null, 2)}`);
-  const quizzes = useSelector(selectQuizzes); // replace this with a call to your selector to get all the quizzes in state
+  const quizzes = useSelector(selectQuizzes); //calling selector to get all the quizzes in state
   console.log(`quizzes variable is ${quizzes}`);
   return (
     <section className="center">

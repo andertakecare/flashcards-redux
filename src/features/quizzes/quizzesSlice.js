@@ -16,7 +16,7 @@ export const quizzesSlice = createSlice({
 });
 
 export const addQuizAndQuizIdToTopic = ( payload ) => {
-    console.log(JSON.stringify( payload, null, 2)); //showing the payload in console
+    // console.log(JSON.stringify( payload, null, 2)); //showing the payload in console
     return (dispatch) => {
         dispatch(quizzesSlice.actions.addQuiz(payload));
         dispatch(addQuizId({ topicId: payload.topicId, quizId: payload.id }));
